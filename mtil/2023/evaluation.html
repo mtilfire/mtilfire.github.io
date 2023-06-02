@@ -109,7 +109,14 @@
 				<p>At the outset, participants will receive a temporary test dataset to evaluate their models. They can employ the provided test data to assess their system's performance and upload the results. This allows participants to view their performance on a leaderboard, where rankings are determined based on the evaluation results.</p>
 				<p>Subsequently, participants are required to submit the predicted sentences for another dataset referred to as the "golden test data." These predicted sentences should be included in a file named test-pred.(lang-code), where "lang-code" represents the language code associated with the translation.</p>
 				<p>This comprehensive evaluation process enables participants to gauge the effectiveness of their machine translation systems by leveraging widely accepted metrics such as BLEU, TER, and METEOR.</p>
-				
+				<p>Following are the Evaluation Matrices: </p>
+				<ol>
+					<li> CHRF++ : ChrF and ChrF++ are two MT evaluation metrics. They both use the F-score statistic for character n-gram matches, and ChrF++ adds word n-grams as well which correlates more strongly with direct assessment. </li>
+					<li>BLEU :  a metric for automatically evaluating machine-translated text. The BLEU score is a number between zero and one that measures the similarity of the machine-translated text to a set of high quality reference translations.</li>
+					<li>TER : TER (Translation Edit Rate, also called Translation Error Rate) is a metric to quantify the edit operations that a hypothesis requires to match a reference translation. </li>
+				</ol>
+				<p>However teams will be ranked based on CHRF++ scores.<br> For simulating the evaluation SacreBLEU library can be used.
+					<a href="https://huggingface.co/spaces/evaluate-metric/sacrebleu" >Use this Link</a></p>
 				
 				
 				<!-- <br>In Task 2 the F1 score of individual arguments will be taken into consideration and then it will be averaged out. The strings that are an exact match will only be considered as True.<br>
